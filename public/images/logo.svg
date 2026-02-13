@@ -1,0 +1,11 @@
+<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font-family: Arial, sans-serif; font-weight: bold; }
+    .bet { fill: #ffffff; font-size: 28px; }
+    .boost { fill: #ffc107; font-size: 28px; }
+    .number { fill: #ff3e3e; font-size: 28px; }
+  </style>
+  <text x="10" y="35" class="text bet">BET</text>
+  <text x="70" y="35" class="text boost">BOOST</text>
+  <text x="160" y="35" class="text number">500</text>
+</svg>
