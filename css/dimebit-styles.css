@@ -1,0 +1,496 @@
+/* DimeBit Casino Styles - Using authentic DimeBit branding */
+
+:root {
+  /* DimeBit Brand Colors - Based on actual logo */
+  --dimebit-green: #10E065;
+  --dimebit-green-dark: #0CBF57;
+  --dimebit-green-light: #39E67E;
+  --dimebit-green-glow: rgba(16, 224, 101, 0.3);
+  --dimebit-dark: #1a1a1a;
+  --dimebit-darker: #0f0f0f;
+  --dimebit-white: #ffffff;
+  --dimebit-gray: #f5f5f5;
+  --dimebit-gray-dark: #666666;
+  --dimebit-black: #000000;
+  
+  /* Update primary colors for DimeBit theme */
+  --primary: var(--dimebit-green);
+  --primary-dark: var(--dimebit-green-dark);
+  --secondary: var(--dimebit-dark);
+  --secondary-dark: var(--dimebit-darker);
+  --accent: var(--dimebit-green-light);
+  --gold: var(--dimebit-green); /* Use green instead of gold */
+  --gold-light: rgba(16, 224, 101, 0.1);
+}
+
+/* Games Ticker Banner (Top) - DimeBit Green */
+.games-ticker {
+  background: linear-gradient(135deg, var(--dimebit-dark) 0%, var(--dimebit-darker) 100%);
+  color: var(--dimebit-white);
+  padding: 12px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 200;
+  border-bottom: 3px solid var(--dimebit-green);
+  box-shadow: 0 2px 15px var(--dimebit-green-glow);
+}
+
+.ticker-content {
+  display: flex;
+  animation: scroll 35s linear infinite;
+  white-space: nowrap;
+}
+
+.ticker-item {
+  margin-right: 80px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--dimebit-white);
+}
+
+.ticker-item strong {
+  color: var(--dimebit-green);
+  text-shadow: 0 0 10px var(--dimebit-green-glow);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* DimeBit Casino Banner */
+.casino-banner {
+  background: linear-gradient(135deg, 
+    rgba(26, 26, 26, 0.95) 0%, 
+    rgba(15, 15, 15, 0.98) 50%,
+    rgba(26, 26, 26, 0.95) 100%);
+  color: var(--dimebit-white);
+  border-radius: 15px;
+  padding: 30px 35px;
+  margin-bottom: 40px;
+  text-align: center;
+  border: 2px solid var(--dimebit-green);
+  box-shadow: 
+    0 10px 30px var(--dimebit-green-glow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.casino-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(16, 224, 101, 0.3), 
+    transparent);
+  animation: greenShine 4s infinite;
+}
+
+@keyframes greenShine {
+  0% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
+.casino-icon {
+  font-size: 2.2rem;
+  margin-right: 15px;
+  vertical-align: middle;
+  color: var(--dimebit-green);
+  text-shadow: 0 0 15px var(--dimebit-green-glow);
+}
+
+.casino-banner p {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 1;
+}
+
+.casino-banner strong {
+  color: var(--dimebit-green);
+  text-shadow: 0 0 10px var(--dimebit-green-glow);
+}
+
+/* Bottom DimeBit Banner */
+.bottom-banner {
+  background: linear-gradient(135deg, 
+    var(--dimebit-darker) 0%, 
+    var(--dimebit-dark) 50%,
+    var(--dimebit-darker) 100%);
+  color: var(--dimebit-white);
+  padding: 20px 0;
+  border-top: 3px solid var(--dimebit-green);
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  box-shadow: 0 -4px 20px var(--dimebit-green-glow);
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.banner-icon {
+  font-size: 1.6rem;
+  margin-right: 12px;
+  animation: dimePulse 2.5s infinite;
+  color: var(--dimebit-green);
+  text-shadow: 0 0 15px var(--dimebit-green-glow);
+}
+
+.banner-text {
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.banner-text strong {
+  color: var(--dimebit-green);
+  text-shadow: 0 0 10px var(--dimebit-green-glow);
+}
+
+.banner-right .banner-cta {
+  background: linear-gradient(135deg, var(--dimebit-green) 0%, var(--dimebit-green-dark) 100%);
+  color: var(--dimebit-white);
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 4px 15px var(--dimebit-green-glow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 2px solid transparent;
+}
+
+.banner-right .banner-cta:hover {
+  background: linear-gradient(135deg, var(--dimebit-green-dark) 0%, var(--dimebit-green) 100%);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 20px var(--dimebit-green-glow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-color: var(--dimebit-white);
+}
+
+@keyframes dimePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Hero Section - DimeBit Theme */
+.hero {
+  background: 
+    linear-gradient(rgba(26, 26, 26, 0.8), rgba(15, 15, 15, 0.9)), 
+    url('https://images.unsplash.com/photo-1596838132731-3301c3fd4317?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--dimebit-white);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Section Backgrounds - Dark with Green Accents */
+.how-it-works {
+  padding: 100px 0;
+  background: 
+    linear-gradient(rgba(15, 15, 15, 0.9), rgba(26, 26, 26, 0.85)), 
+    url('https://images.unsplash.com/photo-1511193311914-0346f16efe90?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--dimebit-white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.social-proof {
+  padding: 100px 0;
+  background: 
+    linear-gradient(rgba(26, 26, 26, 0.85), rgba(15, 15, 15, 0.9)), 
+    url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--dimebit-white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.features {
+  background: 
+    linear-gradient(rgba(15, 15, 15, 0.9), rgba(26, 26, 26, 0.85)), 
+    url('https://images.unsplash.com/photo-1594736797933-d0f2768ea443?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--dimebit-white);
+  padding: 100px 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.faq {
+  padding: 100px 0;
+  background: 
+    linear-gradient(rgba(26, 26, 26, 0.9), rgba(15, 15, 15, 0.85)), 
+    url('https://images.unsplash.com/photo-1518548419970-58cd00b2c2ec?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--dimebit-white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.final-cta {
+  background: 
+    linear-gradient(rgba(15, 15, 15, 0.9), rgba(26, 26, 26, 0.85)), 
+    url('https://images.unsplash.com/photo-1601370688000-a22d0dba8c45?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--dimebit-white);
+  padding: 100px 0;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  background: 
+    linear-gradient(rgba(15, 15, 15, 0.95), rgba(26, 26, 26, 0.9)), 
+    url('https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  color: var(--dimebit-white);
+  padding: 60px 0 30px;
+  border-top: 3px solid var(--dimebit-green);
+}
+
+header {
+  background: 
+    linear-gradient(rgba(15, 15, 15, 0.95), rgba(26, 26, 26, 0.9)), 
+    url('https://images.unsplash.com/photo-1606924842584-fbb79e495999?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  color: var(--dimebit-white);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px var(--dimebit-green-glow);
+  border-bottom: 2px solid var(--dimebit-green);
+}
+
+/* DimeBit-specific UI enhancements */
+.exclusive-badge {
+  background: linear-gradient(135deg, var(--dimebit-green) 0%, var(--dimebit-green-dark) 100%);
+  color: var(--dimebit-white);
+  border: 2px solid var(--dimebit-white);
+  box-shadow: 0 4px 15px var(--dimebit-green-glow);
+}
+
+.cta-button {
+  background: linear-gradient(135deg, var(--dimebit-green) 0%, var(--dimebit-green-dark) 100%);
+  border: 2px solid var(--dimebit-green-light);
+  box-shadow: 
+    0 6px 20px var(--dimebit-green-glow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: var(--dimebit-white);
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, var(--dimebit-green-dark) 0%, var(--dimebit-green) 100%);
+  box-shadow: 
+    0 8px 25px var(--dimebit-green-glow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.highlight {
+  color: var(--dimebit-green);
+  text-shadow: 0 0 10px var(--dimebit-green-glow);
+  font-weight: bold;
+}
+
+.section-title {
+  color: var(--dimebit-green);
+  text-shadow: 0 0 15px var(--dimebit-green-glow);
+}
+
+.section-title:after {
+  background: linear-gradient(90deg, transparent, var(--dimebit-green), transparent);
+  box-shadow: 0 0 10px var(--dimebit-green-glow);
+}
+
+/* Feature Cards with DimeBit Green Accents */
+.feature-card {
+  border: 1px solid rgba(16, 224, 101, 0.3);
+  box-shadow: 0 4px 15px rgba(16, 224, 101, 0.1);
+}
+
+.feature-card:hover {
+  border-color: var(--dimebit-green);
+  box-shadow: 0 6px 20px var(--dimebit-green-glow);
+}
+
+.feature-icon {
+  color: var(--dimebit-green);
+  text-shadow: 0 0 15px var(--dimebit-green-glow);
+}
+
+/* Trust Badges */
+.trust-badges span img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(98%) saturate(372%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+/* Responsive DimeBit Elements */
+@media (max-width: 992px) {
+  .games-ticker {
+    padding: 10px 0;
+  }
+  
+  .ticker-item {
+    margin-right: 60px;
+    font-size: 13px;
+  }
+  
+  .casino-banner {
+    padding: 25px 20px;
+    margin-bottom: 30px;
+  }
+  
+  .casino-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile DimeBit Optimizations */
+  .games-ticker {
+    padding: 8px 0;
+  }
+  
+  .ticker-content {
+    animation: scroll 25s linear infinite;
+  }
+  
+  .ticker-item {
+    margin-right: 50px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .casino-banner {
+    padding: 20px 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  
+  .casino-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+  }
+  
+  .casino-banner p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* Bottom Banner Mobile */
+  .bottom-banner {
+    padding: 15px 0;
+    position: relative;
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .banner-left {
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .banner-icon {
+    font-size: 1.4rem;
+    margin-right: 8px;
+  }
+  
+  .banner-text {
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  
+  .banner-right .banner-cta {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+  }
+  
+  /* Disable parallax backgrounds on mobile */
+  .hero, .how-it-works, .features, .social-proof, .faq, .final-cta, footer, header {
+    background-attachment: scroll !important;
+  }
+}
+
+/* High-end DimeBit visual effects for desktop */
+@media (min-width: 769px) {
+  .casino-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 15px 40px var(--dimebit-green-glow),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  .cta-button.pulse {
+    animation: dimebitPulse 2s infinite;
+  }
+  
+  @keyframes dimebitPulse {
+    0%, 100% { 
+      transform: scale(1);
+      box-shadow: 
+        0 6px 20px var(--dimebit-green-glow),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+    50% { 
+      transform: scale(1.02);
+      box-shadow: 
+        0 8px 25px var(--dimebit-green-glow),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+  .casino-banner::before {
+    animation: none; /* Disable shine animation on mobile for performance */
+  }
+  
+  .banner-icon {
+    animation: none; /* Disable pulse animation on mobile */
+  }
+}
