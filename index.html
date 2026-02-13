@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>$1000 Welcome Bonus | DimeBit Casino</title>
+  <!-- Meta tags for SEO and social sharing -->
+  <meta name="description" content="Get your $1000 Welcome Bonus at DimeBit Casino. Play slots, table games, and live dealer games with the best odds online.">
+  <meta property="og:title" content="$1000 Welcome Bonus | DimeBit Casino">
+  <meta property="og:description" content="Your $1000 bonus is waiting. Join thousands of winners at DimeBit Casino.">
+  <meta property="og:image" content="https://dimebit-casino.onrender.com/images/social-share.jpg">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/casino-styles.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Affiliate tracking parameters -->
+  <script>
+    // Capture UTM parameters and store in cookies
+    function getParameterByName(name) {
+      var url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    // Store UTM parameters in cookies
+    function storeUtmParameters() {
+      var utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+      utmParams.forEach(function(param) {
+        var value = getParameterByName(param);
+        if (value) {
+          document.cookie = param + '=' + value + ';path=/;max-age=2592000'; // 30 days
+        }
+      });
+      // Also store referrer if available
+      if (document.referrer) {
+        document.cookie = 'referrer=' + document.referrer + ';path=/;max-age=2592000';
+      }
+    }
+    
+    // Run on page load
+    window.addEventListener('DOMContentLoaded', storeUtmParameters);
+  </script>
+</head>
+<body>
+  <!-- CASINO GAMES TICKER BANNER -->
+  <div class="games-ticker">
+    <div class="ticker-content">
+      <span class="ticker-item"><strong>🎰 SLOTS:</strong> Mega Fortune Jackpot $2.4M</span>
+      <span class="ticker-item"><strong>🃏 BLACKJACK:</strong> 99.5% RTP Live Tables</span>
+      <span class="ticker-item"><strong>🎲 ROULETTE:</strong> European & American Available</span>
+      <span class="ticker-item"><strong>🔥 HOT:</strong> Sarah J. won $89,500 on Lightning Roulette!</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="images/dimebit-logo.svg" alt="DimeBit Casino" class="logo-img">
+        </div>
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-menu">
+          <a href="#games" class="nav-link">Games</a>
+          <a href="#bonuses" class="nav-link">Bonuses</a>
+          <a href="#winners" class="nav-link">Winners</a>
+          <a href="#signup" class="cta-button-sm">Join Now</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-inner">
+          <span class="exclusive-badge">EXCLUSIVE WELCOME BONUS</span>
+          <h1>$1000 WELCOME BONUS</h1>
+          <h2>Play. Win. Cash Out.</h2>
+          <p class="hero-text">Get your massive $1000 welcome bonus + 200 free spins. Play slots, table games, and live casino with the best odds online.</p>
+          
+          <div class="cta-timer">
+            <p>Limited time offer expires in:</p>
+            <div class="countdown" id="countdown">23:59:59</div>
+          </div>
+          
+          <a href="#signup" class="cta-button pulse">CLAIM YOUR $1000 BONUS</a>
+          
+          <div class="trust-badges">
+            <span><img src="images/check.svg" alt="✓"> Instant bonus credit</span>
+            <span><img src="images/check.svg" alt="✓"> 3000+ casino games</span>
+            <span><img src="images/check.svg" alt="✓"> 24/7 fast payouts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="games">
+    <div class="container">
+      <h2 class="section-title">How to Claim Your Bonus</h2>
+      
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-icon">🎰</div>
+          <h3>Sign Up</h3>
+          <p>Create your account in under 60 seconds</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-icon">💎</div>
+          <h3>Get Your Bonus</h3>
+          <p>$1000 bonus + 200 free spins instantly</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-icon">🏆</div>
+          <h3>Start Winning</h3>
+          <p>Play 3000+ games and cash out your winnings</p>
+        </div>
+      </div>
+      
+      <a href="#signup" class="cta-button">START PLAYING NOW</a>
+    </div>
+  </section>
+
+  <section class="features" id="bonuses">
+    <div class="container">
+      <h2 class="section-title">Why Choose DimeBit Casino</h2>
+      
+      <!-- CASINO GAMES BANNER -->
+      <div class="casino-banner">
+        <div class="casino-icon">💰</div>
+        <p><strong>3000+ GAMES:</strong> Slots, Blackjack, Roulette, Live Dealers & Massive Progressive Jackpots</p>
+      </div>
+      
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Instant Payouts</h3>
+          <p>Withdraw your winnings in minutes, not days</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🎮</div>
+          <h3>Live Casino</h3>
+          <p>Real dealers, real action, streamed in HD</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>100% Secure</h3>
+          <p>SSL encryption & licensed gaming authority</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🎁</div>
+          <h3>Daily Bonuses</h3>
+          <p>New promotions and free spins every day</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-proof" id="winners">
+    <div class="container">
+      <h2 class="section-title">Join 100K+ Winners</h2>
+      
+      <div class="live-winners" id="live-winners">
+        <h3 class="winners-heading">🔥 Latest Big Wins</h3>
+        <div class="winner-alert">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=150" class="winner-avatar" alt="Winner">
+          <div class="winner-text">
+            <p>Alex M. just won <span class="highlight">$47,200</span> on Mega Moolah!</p>
+            <small>3 minutes ago</small>
+          </div>
+        </div>
+        <div class="winner-alert">
+          <img src="https://images.unsplash.com/photo-1494790108755-2616b5b07129?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=150" class="winner-avatar" alt="Winner">
+          <div class="winner-text">
+            <p>Maria T. just won <span class="highlight">$23,850</span> on Lightning Roulette!</p>
+            <small>7 minutes ago</small>
+          </div>
+        </div>
+        <div class="winner-alert">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=150" class="winner-avatar" alt="Winner">
+          <div class="winner-text">
+            <p>James K. just won <span class="highlight">$91,500</span> on Starburst Slots!</p>
+            <small>11 minutes ago</small>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial-text">
+            <p>"Hit the jackpot on my third spin! DimeBit's slots are insane. Cashed out $28,000 same day."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=150" alt="John D." class="author-img">
+            <div>
+              <h4>John D.</h4>
+              <p>$28,000 jackpot winner</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-text">
+            <p>"Best live dealers online. Blackjack tables are fair and payouts are lightning fast."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=150" alt="Sarah M." class="author-img">
+            <div>
+              <h4>Sarah M.</h4>
+              <p>$15,500 blackjack winner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stats">
+        <div class="stat">
+          <h3>100K+</h3>
+          <p>Active Players</p>
+        </div>
+        <div class="stat">
+          <h3>$50M+</h3>
+          <p>Paid Out Monthly</p>
+        </div>
+        <div class="stat">
+          <h3>3000+</h3>
+          <p>Casino Games</p>
+        </div>
+      </div>
+      
+      <div class="winner-spotlight">
+        <div class="spotlight-content">
+          <h3 class="spotlight-title">💎 Biggest Win This Week</h3>
+          <div class="spotlight-image">
+            <img src="https://images.unsplash.com/photo-1533688836845-ad3a3b9b4633?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200" alt="Jackpot Winner Celebrating">
+          </div>
+          <div class="spotlight-text">
+            <p class="spotlight-amount">$234,500</p>
+            <p class="spotlight-name">Won by Jennifer R. - Progressive Jackpot</p>
+            <p class="spotlight-date">February 11, 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="signup" id="signup">
+    <div class="container">
+      <h2 class="section-title">Claim Your $1000 Bonus Now</h2>
+      
+      <form class="signup-form" id="signup-form">
+        <div class="form-progress">
+          <div class="progress-step active" data-step="1">1</div>
+          <div class="progress-line"></div>
+          <div class="progress-step" data-step="2">2</div>
+          <div class="progress-line"></div>
+          <div class="progress-step" data-step="3">3</div>
+        </div>
+        
+        <div class="form-step active" id="step1">
+          <h3>Create Your Account</h3>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Create Password</label>
+            <input type="password" id="password" placeholder="Minimum 8 characters" required minlength="8">
+          </div>
+          <button type="button" class="next-step">Continue</button>
+        </div>
+        
+        <div class="form-step" id="step2">
+          <h3>Personal Information</h3>
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="Your first name" required>
+            </div>
+            <div class="form-group half">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Your last name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="(XXX) XXX-XXXX" required>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+          </div>
+          <div class="form-buttons">
+            <button type="button" class="prev-step">Back</button>
+            <button type="button" class="next-step">Continue</button>
+          </div>
+        </div>
+        
+        <div class="form-step" id="step3">
+          <h3>Address Information</h3>
+          <div class="form-group">
+            <label for="address">Address Line 1</label>
+            <input type="text" id="address" placeholder="Street address" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="City" required>
+            </div>
+            <div class="form-group half">
+              <label for="state">State</label>
+              <select id="state" required>
+                <option value="" disabled selected>Select State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <!-- Add all states -->
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="zipCode">ZIP Code</label>
+            <input type="text" id="zipCode" placeholder="ZIP Code" required pattern="[0-9]{5}">
+          </div>
+          <div class="form-group checkbox">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I am 21+ years old and agree to the <a href="#">Terms & Conditions</a></label>
+          </div>
+          <div class="form-buttons">
+            <button type="button" class="prev-step">Back</button>
+            <button type="submit" class="submit-form">CLAIM YOUR $1000 BONUS</button>
+          </div>
+        </div>
+      </form>
+      
+      <div class="security-badges">
+        <div class="badge">🔒 256-Bit SSL</div>
+        <div class="badge">✓ Licensed Casino</div>
+        <div class="badge">📞 24/7 Support</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">How do I claim my $1000 welcome bonus?</div>
+          <div class="accordion-content">
+            <p>Simply sign up for a new account and your bonus will be automatically credited. No bonus codes needed - just register and start playing immediately.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header">What games can I play with my bonus?</div>
+          <div class="accordion-content">
+            <p>Your bonus works on all our games: 2500+ slot machines, blackjack, roulette, baccarat, poker, and live dealer games. Full access to our entire casino.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header">How fast are withdrawals?</div>
+          <div class="accordion-content">
+            <p>Most withdrawals are processed within 1-6 hours. Crypto withdrawals are fastest (1-2 hours), followed by e-wallets and bank transfers.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header">Is DimeBit Casino licensed and safe?</div>
+          <div class="accordion-content">
+            <p>Yes, we're fully licensed and use 256-bit SSL encryption. All games are certified fair by independent auditors and we're regulated by gaming authorities.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header">What payment methods do you accept?</div>
+          <div class="accordion-content">
+            <p>We accept all major credit cards, Bitcoin, Ethereum, PayPal, Skrill, bank transfers, and more. Deposits are instant with zero fees.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Win Big?</h2>
+      <p>Your $1000 bonus is waiting. Join the winners today.</p>
+      <a href="#signup" class="cta-button pulse">GET YOUR $1000 BONUS NOW</a>
+      <div class="offer-terms">
+        <p>Terms: Must be 21+ in eligible jurisdiction. Bonus subject to 35x wagering requirement. Standard terms apply.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CASINO BANNER -->
+  <div class="bottom-banner">
+    <div class="container">
+      <div class="banner-content">
+        <div class="banner-left">
+          <span class="banner-icon">💰</span>
+          <span class="banner-text"><strong>NOW PLAYING:</strong> Mega Fortune $3.2M | Lightning Roulette | Blackjack VIP</span>
+        </div>
+        <div class="banner-right">
+          <a href="#signup" class="banner-cta">PLAY NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="images/dimebit-logo.svg" alt="DimeBit Casino" class="logo-img">
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Casino</h4>
+            <a href="#">Slots</a>
+            <a href="#">Table Games</a>
+            <a href="#">Live Casino</a>
+            <a href="#">Jackpots</a>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">FAQ</a>
+            <a href="#">Live Chat</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Responsible Gaming</a>
+            <a href="#">Licensing</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 DimeBit Casino. All rights reserved.</p>
+        <p class="responsible-gaming">Please gamble responsibly. If you or someone you know has a gambling problem, call 1-800-GAMBLER.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

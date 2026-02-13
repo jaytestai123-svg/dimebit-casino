@@ -1,0 +1,410 @@
+/* Adding gambling-specific styling with direct backgrounds */
+
+:root {
+  --primary: #ff3e3e;
+  --primary-dark: #e02121;
+  --secondary: #2a2a5c;
+  --secondary-dark: #1a1a3a;
+  --accent: #ffd700; /* More golden color */
+  --gold: #d4af37; /* Luxury gold */
+  --gold-light: #f8efd3; /* Light gold */
+  --dark: #121212;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --gray-light: #e9ecef;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1601370688000-a22d0dba8c45?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--light);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--light);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Social Proof Section */
+.social-proof {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1607287254512-0b9f58f9eb0e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--light);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Features Section */
+.features {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518548419970-58cd00b2c2ec?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--light);
+  padding: 100px 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* FAQ Section */
+.faq {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517232115160-ff93364542dd?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--light);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Final CTA */
+.final-cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1626755853168-f2e10a615382?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--light);
+  padding: 100px 0;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  padding: 60px 0 30px;
+  border-top: 3px solid var(--gold);
+}
+
+/* Header */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid var(--gold);
+}
+
+/* Odds Ticker Banner (Top) */
+.odds-ticker {
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark), var(--primary));
+  color: white;
+  padding: 12px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 200;
+  border-bottom: 2px solid var(--gold);
+}
+
+.ticker-content {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  white-space: nowrap;
+}
+
+.ticker-item {
+  margin-right: 60px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Sports Banner (replaces luxury banner) */
+.sports-banner {
+  background: linear-gradient(135deg, rgba(255, 62, 62, 0.9) 0%, rgba(224, 33, 33, 0.95) 100%);
+  color: var(--light);
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  border: 2px solid var(--gold);
+  box-shadow: 0 8px 25px rgba(255, 62, 62, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.sports-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
+.sports-icon {
+  font-size: 2rem;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.sports-banner p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Bottom Sports Betting Banner */
+.bottom-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  padding: 20px 0;
+  border-top: 3px solid var(--gold);
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.banner-icon {
+  font-size: 1.5rem;
+  margin-right: 12px;
+  animation: pulse 2s infinite;
+}
+
+.banner-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.banner-right .banner-cta {
+  background: var(--primary);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 62, 62, 0.3);
+}
+
+.banner-right .banner-cta:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 62, 62, 0.4);
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Mobile Responsive for Gambling Elements */
+@media (max-width: 992px) {
+  .odds-ticker {
+    padding: 10px 0;
+  }
+  
+  .ticker-item {
+    margin-right: 50px;
+    font-size: 13px;
+  }
+  
+  .sports-banner {
+    padding: 20px 25px;
+    margin-bottom: 30px;
+  }
+  
+  .sports-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Odds Ticker Mobile */
+  .odds-ticker {
+    padding: 8px 0;
+  }
+  
+  .ticker-content {
+    animation: scroll 20s linear infinite; /* Faster on mobile */
+  }
+  
+  .ticker-item {
+    margin-right: 40px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  /* Sports Banner Mobile */
+  .sports-banner {
+    padding: 18px 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+  }
+  
+  .sports-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .sports-banner p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  /* Bottom Banner Mobile */
+  .bottom-banner {
+    padding: 15px 0;
+    position: relative; /* Not sticky on mobile for better UX */
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .banner-left {
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .banner-icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+  }
+  
+  .banner-text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  
+  .banner-right .banner-cta {
+    padding: 12px 30px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    min-width: 120px;
+  }
+  
+  /* Disable parallax backgrounds on mobile */
+  .hero, .how-it-works, .features, .social-proof, .faq, .final-cta, footer, header {
+    background-attachment: scroll !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra small mobile adjustments */
+  .ticker-item {
+    margin-right: 30px;
+    font-size: 11px;
+  }
+  
+  .sports-banner {
+    padding: 15px 12px;
+    margin: 0 10px 20px;
+  }
+  
+  .sports-banner p {
+    font-size: 0.85rem;
+  }
+  
+  .sports-icon {
+    font-size: 1.3rem;
+    margin-right: 8px;
+  }
+  
+  .bottom-banner {
+    padding: 12px 0;
+  }
+  
+  .banner-text {
+    font-size: 0.8rem;
+    padding: 0 10px;
+  }
+  
+  .banner-right .banner-cta {
+    padding: 10px 25px;
+    font-size: 0.8rem;
+    min-width: 100px;
+  }
+  
+  .banner-icon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ticker-item {
+    margin-right: 25px;
+    font-size: 10px;
+  }
+  
+  .sports-banner {
+    margin: 0 5px 15px;
+    padding: 12px 10px;
+  }
+  
+  .sports-banner p {
+    font-size: 0.8rem;
+  }
+  
+  .banner-text {
+    font-size: 0.75rem;
+  }
+}
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+  .sports-banner::before {
+    animation: none; /* Disable shine animation on mobile for performance */
+  }
+  
+  .banner-icon {
+    animation: none; /* Disable pulse animation on mobile */
+  }
+}

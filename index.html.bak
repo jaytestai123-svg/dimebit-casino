@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$500 Risk-Free First Bet | BetBoost500</title>
+  <!-- Meta tags for SEO and social sharing -->
+  <meta name="description" content="Sign up today and get a $500 Risk-Free First Bet. If your first bet loses, get it back as site credit instantly.">
+  <meta property="og:title" content="$500 Risk-Free First Bet | BetBoost500">
+  <meta property="og:description" content="Your first bet is on us. Get up to $500 back if you don't win.">
+  <meta property="og:image" content="https://betboost500.onrender.com/images/social-share.jpg">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Affiliate tracking parameters -->
+  <script>
+    // Capture UTM parameters and store in cookies
+    function getParameterByName(name) {
+      var url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    // Store UTM parameters in cookies
+    function storeUtmParameters() {
+      var utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+      utmParams.forEach(function(param) {
+        var value = getParameterByName(param);
+        if (value) {
+          document.cookie = param + '=' + value + ';path=/;max-age=2592000'; // 30 days
+        }
+      });
+      // Also store referrer if available
+      if (document.referrer) {
+        document.cookie = 'referrer=' + document.referrer + ';path=/;max-age=2592000';
+      }
+    }
+    
+    // Run on page load
+    window.addEventListener('DOMContentLoaded', storeUtmParameters);
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.svg" alt="BetBoost500" class="logo-img">
+      </div>
+      <nav>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#signup" class="cta-button-sm">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="exclusive-badge">EXCLUSIVE OFFER</span>
+        <h1>$500 RISK-FREE FIRST BET</h1>
+        <h2>Your First Bet Is On Us</h2>
+        <p class="hero-text">If your first bet loses, we'll credit your account with up to $500 in site credit instantly.</p>
+        
+        <div class="cta-timer">
+          <p>Offer expires in:</p>
+          <div class="countdown" id="countdown">23:59:59</div>
+        </div>
+        
+        <a href="#signup" class="cta-button pulse">CLAIM YOUR RISK-FREE BET</a>
+        
+        <div class="trust-badges">
+          <span><img src="images/check.svg" alt="✓"> No deposit code needed</span>
+          <span><img src="images/check.svg" alt="✓"> Instant credit if you lose</span>
+          <span><img src="images/check.svg" alt="✓"> Available in your state</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-image.png" alt="Mobile betting app" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works: 3 Simple Steps</h2>
+      
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-icon">📝</div>
+          <h3>Sign Up</h3>
+          <p>Create your account in less than 2 minutes</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-icon">💰</div>
+          <h3>Place Your Bet</h3>
+          <p>Bet on any sport up to $500</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-icon">🏆</div>
+          <h3>Win or Get Refunded</h3>
+          <p>If you win, keep the profits. If you lose, get site credit back</p>
+        </div>
+      </div>
+      
+      <a href="#signup" class="cta-button">GET STARTED NOW</a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Why Choose BetBoost500</h2>
+      
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3>Fast Payouts</h3>
+          <p>Get your winnings within 24 hours - not days or weeks</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Mobile-First Platform</h3>
+          <p>Bet anywhere with our top-rated mobile app</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Bank-Level Security</h3>
+          <p>Your data and funds are protected with the latest encryption</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🎮</div>
+          <h3>Live Betting</h3>
+          <p>Bet during the game with real-time odds updates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-proof">
+    <div class="container">
+      <h2 class="section-title">Join Thousands of Winners</h2>
+      
+      <div class="live-winners" id="live-winners">
+        <!-- Winner alerts will be inserted here by JavaScript -->
+      </div>
+      
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial-text">
+            <p>"I was skeptical at first, but the risk-free bet made it easy to try. Won $750 on my first bet!"</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="images/testimonial1.jpg" alt="John D." class="author-img">
+            <div>
+              <h4>John D.</h4>
+              <p>Member since 2025</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-text">
+            <p>"The platform is so easy to use and the odds are better than anywhere else I've tried."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="images/testimonial2.jpg" alt="Sarah M." class="author-img">
+            <div>
+              <h4>Sarah M.</h4>
+              <p>Member since 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stats">
+        <div class="stat">
+          <h3>500K+</h3>
+          <p>Active Members</p>
+        </div>
+        <div class="stat">
+          <h3>$25M+</h3>
+          <p>Paid Out This Month</p>
+        </div>
+        <div class="stat">
+          <h3>97%</h3>
+          <p>Satisfaction Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="signup" id="signup">
+    <div class="container">
+      <h2 class="section-title">Claim Your $500 Risk-Free Bet Now</h2>
+      
+      <form class="signup-form" id="signup-form">
+        <div class="form-progress">
+          <div class="progress-step active" data-step="1">1</div>
+          <div class="progress-line"></div>
+          <div class="progress-step" data-step="2">2</div>
+          <div class="progress-line"></div>
+          <div class="progress-step" data-step="3">3</div>
+        </div>
+        
+        <div class="form-step active" id="step1">
+          <h3>Create Your Account</h3>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Create Password</label>
+            <input type="password" id="password" placeholder="Minimum 8 characters" required minlength="8">
+          </div>
+          <button type="button" class="next-step">Continue</button>
+        </div>
+        
+        <div class="form-step" id="step2">
+          <h3>Personal Information</h3>
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="Your first name" required>
+            </div>
+            <div class="form-group half">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Your last name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="(XXX) XXX-XXXX" required>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+          </div>
+          <div class="form-buttons">
+            <button type="button" class="prev-step">Back</button>
+            <button type="button" class="next-step">Continue</button>
+          </div>
+        </div>
+        
+        <div class="form-step" id="step3">
+          <h3>Address Information</h3>
+          <div class="form-group">
+            <label for="address">Address Line 1</label>
+            <input type="text" id="address" placeholder="Street address" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="City" required>
+            </div>
+            <div class="form-group half">
+              <label for="state">State</label>
+              <select id="state" required>
+                <option value="" disabled selected>Select State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <!-- Add all states -->
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="zipCode">ZIP Code</label>
+            <input type="text" id="zipCode" placeholder="ZIP Code" required pattern="[0-9]{5}">
+          </div>
+          <div class="form-group checkbox">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I am 21+ years old and agree to the <a href="#">Terms & Conditions</a></label>
+          </div>
+          <div class="form-buttons">
+            <button type="button" class="prev-step">Back</button>
+            <button type="submit" class="submit-form">CLAIM YOUR $500 OFFER</button>
+          </div>
+        </div>
+      </form>
+      
+      <div class="security-badges">
+        <div class="badge">🔒 Secure Encryption</div>
+        <div class="badge">✓ Licensed & Regulated</div>
+        <div class="badge">🕒 24/7 Support</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">How does the risk-free bet work?</div>
+          <div class="accordion-content">
+            <p>When you place your first bet, if it loses, we'll credit your account with site credit equal to your bet amount, up to $500. This credit will be available within 24 hours of your bet settling as a loss.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header">What sports can I bet on?</div>
+          <div class="accordion-content">
+            <p>You can bet on all major sports including NFL, NBA, MLB, NHL, soccer, tennis, UFC, boxing, and more. We also offer betting on esports and special events.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header">How quickly can I withdraw my winnings?</div>
+          <div class="accordion-content">
+            <p>Withdrawals are processed within 24 hours. Once processed, the timing depends on your withdrawal method: PayPal and online banking transfers are typically available within 24 hours, while card refunds may take 2-5 business days.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header">Is BetBoost500 legal in my state?</div>
+          <div class="accordion-content">
+            <p>BetBoost500 is currently legal in over 20 states including NY, NJ, PA, MI, IL, CO, AZ, TN, and more. We're actively expanding to new states as regulations allow. During registration, we'll confirm if you're in an eligible location.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header">What payment methods can I use?</div>
+          <div class="accordion-content">
+            <p>We accept all major credit/debit cards, PayPal, online banking, wire transfers, and Play+ cards. All deposits are instant and we don't charge any processing fees.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Win Big?</h2>
+      <p>Join thousands of winners today and claim your $500 risk-free bet</p>
+      <a href="#signup" class="cta-button pulse">GET YOUR RISK-FREE $500 BET NOW</a>
+      <div class="offer-terms">
+        <p>Terms & Conditions: Must be 21+ and in a legal state. First bet only. Credit expires 14 days after issuance.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="images/logo.svg" alt="BetBoost500" class="logo-img">
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Responsible Gambling</a>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">FAQ</a>
+            <a href="#">Live Chat</a>
+            <a href="#">Contact Support</a>
+          </div>
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Responsible Gaming</a>
+            <a href="#">Affiliate Program</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 BetBoost500. All rights reserved.</p>
+        <p class="responsible-gaming">Please gamble responsibly. If you or someone you know has a gambling problem, call 1-800-GAMBLER.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

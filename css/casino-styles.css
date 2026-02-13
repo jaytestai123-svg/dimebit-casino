@@ -1,0 +1,490 @@
+/* DimeBit Casino Styles - Inspired by casino luxury and elegance */
+
+:root {
+  --casino-gold: #FFD700;
+  --casino-gold-dark: #B8860B; 
+  --casino-red: #DC143C;
+  --casino-red-dark: #B22222;
+  --casino-purple: #4B0082;
+  --casino-purple-dark: #2F0052;
+  --casino-black: #1a1a1a;
+  --casino-white: #ffffff;
+  --casino-gray: #f5f5f5;
+  --casino-gray-dark: #666666;
+  
+  /* Update primary colors for casino theme */
+  --primary: var(--casino-red);
+  --primary-dark: var(--casino-red-dark);
+  --secondary: var(--casino-purple);
+  --secondary-dark: var(--casino-purple-dark);
+  --accent: var(--casino-gold);
+  --gold: var(--casino-gold);
+  --gold-light: #fff9e6;
+}
+
+/* Casino Games Ticker Banner (Top) */
+.games-ticker {
+  background: linear-gradient(135deg, var(--casino-purple) 0%, var(--casino-purple-dark) 100%);
+  color: var(--casino-white);
+  padding: 12px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 200;
+  border-bottom: 3px solid var(--casino-gold);
+  box-shadow: 0 2px 10px rgba(75, 0, 130, 0.3);
+}
+
+.ticker-content {
+  display: flex;
+  animation: scroll 35s linear infinite;
+  white-space: nowrap;
+}
+
+.ticker-item {
+  margin-right: 80px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--casino-white);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Casino Games Banner (replaces sports banner) */
+.casino-banner {
+  background: linear-gradient(135deg, 
+    rgba(220, 20, 60, 0.95) 0%, 
+    rgba(178, 34, 34, 0.98) 50%,
+    rgba(75, 0, 130, 0.95) 100%);
+  color: var(--casino-white);
+  border-radius: 15px;
+  padding: 30px 35px;
+  margin-bottom: 40px;
+  text-align: center;
+  border: 2px solid var(--casino-gold);
+  box-shadow: 
+    0 10px 30px rgba(220, 20, 60, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.casino-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 215, 0, 0.2), 
+    transparent);
+  animation: goldShine 4s infinite;
+}
+
+@keyframes goldShine {
+  0% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
+.casino-icon {
+  font-size: 2.2rem;
+  margin-right: 15px;
+  vertical-align: middle;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.casino-banner p {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 1;
+}
+
+/* Bottom Casino Banner */
+.bottom-banner {
+  background: linear-gradient(135deg, 
+    var(--casino-black) 0%, 
+    var(--casino-purple-dark) 50%,
+    var(--casino-black) 100%);
+  color: var(--casino-white);
+  padding: 20px 0;
+  border-top: 3px solid var(--casino-gold);
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  box-shadow: 0 -4px 20px rgba(75, 0, 130, 0.4);
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.banner-icon {
+  font-size: 1.6rem;
+  margin-right: 12px;
+  animation: pulse 2.5s infinite;
+  color: var(--casino-gold);
+}
+
+.banner-text {
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.banner-right .banner-cta {
+  background: linear-gradient(135deg, var(--casino-gold) 0%, var(--casino-gold-dark) 100%);
+  color: var(--casino-black);
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 4px 15px rgba(255, 215, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 2px solid transparent;
+}
+
+.banner-right .banner-cta:hover {
+  background: linear-gradient(135deg, var(--casino-gold-dark) 0%, var(--casino-gold) 100%);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 20px rgba(255, 215, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-color: var(--casino-white);
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Hero Section Casino Theme */
+.hero {
+  background: 
+    linear-gradient(rgba(26, 26, 26, 0.7), rgba(75, 0, 130, 0.8)), 
+    url('https://images.unsplash.com/photo-1596838132731-3301c3fd4317?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--casino-white);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* How It Works Section - Casino Games Theme */
+.how-it-works {
+  padding: 100px 0;
+  background: 
+    linear-gradient(rgba(26, 26, 26, 0.8), rgba(75, 0, 130, 0.75)), 
+    url('https://images.unsplash.com/photo-1511193311914-0346f16efe90?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--casino-white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Social Proof Section - Casino Winners */
+.social-proof {
+  padding: 100px 0;
+  background: 
+    linear-gradient(rgba(220, 20, 60, 0.75), rgba(178, 34, 34, 0.8)), 
+    url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--casino-white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Features Section - Casino Theme */
+.features {
+  background: 
+    linear-gradient(rgba(75, 0, 130, 0.8), rgba(47, 0, 82, 0.85)), 
+    url('https://images.unsplash.com/photo-1594736797933-d0f2768ea443?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--casino-white);
+  padding: 100px 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* FAQ Section - Casino Theme */
+.faq {
+  padding: 100px 0;
+  background: 
+    linear-gradient(rgba(26, 26, 26, 0.85), rgba(75, 0, 130, 0.8)), 
+    url('https://images.unsplash.com/photo-1518548419970-58cd00b2c2ec?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--casino-white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Final CTA - Casino Jackpot Theme */
+.final-cta {
+  background: 
+    linear-gradient(rgba(220, 20, 60, 0.8), rgba(26, 26, 26, 0.85)), 
+    url('https://images.unsplash.com/photo-1601370688000-a22d0dba8c45?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--casino-white);
+  padding: 100px 0;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Footer - Casino Elegance */
+footer {
+  background: 
+    linear-gradient(rgba(26, 26, 26, 0.95), rgba(75, 0, 130, 0.9)), 
+    url('https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  color: var(--casino-white);
+  padding: 60px 0 30px;
+  border-top: 3px solid var(--casino-gold);
+}
+
+/* Header - Casino Style */
+header {
+  background: 
+    linear-gradient(rgba(26, 26, 26, 0.95), rgba(75, 0, 130, 0.9)), 
+    url('https://images.unsplash.com/photo-1606924842584-fbb79e495999?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-position: center;
+  color: var(--casino-white);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(75, 0, 130, 0.4);
+  border-bottom: 2px solid var(--casino-gold);
+}
+
+/* Casino-specific enhancements */
+.exclusive-badge {
+  background: linear-gradient(135deg, var(--casino-gold) 0%, var(--casino-gold-dark) 100%);
+  color: var(--casino-black);
+  border: 2px solid var(--casino-white);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+.cta-button {
+  background: linear-gradient(135deg, var(--casino-red) 0%, var(--casino-red-dark) 100%);
+  border: 2px solid var(--casino-gold);
+  box-shadow: 
+    0 6px 20px rgba(220, 20, 60, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, var(--casino-red-dark) 0%, var(--casino-red) 100%);
+  box-shadow: 
+    0 8px 25px rgba(220, 20, 60, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.highlight {
+  color: var(--casino-gold);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
+/* Responsive Casino Elements */
+@media (max-width: 992px) {
+  .games-ticker {
+    padding: 10px 0;
+  }
+  
+  .ticker-item {
+    margin-right: 60px;
+    font-size: 13px;
+  }
+  
+  .casino-banner {
+    padding: 25px 20px;
+    margin-bottom: 30px;
+  }
+  
+  .casino-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile Casino Optimizations */
+  .games-ticker {
+    padding: 8px 0;
+  }
+  
+  .ticker-content {
+    animation: scroll 25s linear infinite;
+  }
+  
+  .ticker-item {
+    margin-right: 50px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .casino-banner {
+    padding: 20px 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  
+  .casino-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+  }
+  
+  .casino-banner p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* Bottom Banner Mobile */
+  .bottom-banner {
+    padding: 15px 0;
+    position: relative;
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .banner-left {
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .banner-icon {
+    font-size: 1.4rem;
+    margin-right: 8px;
+  }
+  
+  .banner-text {
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  
+  .banner-right .banner-cta {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+  }
+  
+  /* Disable parallax backgrounds on mobile */
+  .hero, .how-it-works, .features, .social-proof, .faq, .final-cta, footer, header {
+    background-attachment: scroll !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .ticker-item {
+    margin-right: 40px;
+    font-size: 11px;
+  }
+  
+  .casino-banner {
+    padding: 15px 10px;
+    margin: 0 10px 20px;
+  }
+  
+  .casino-banner p {
+    font-size: 0.8rem;
+  }
+  
+  .casino-icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+  }
+  
+  .bottom-banner {
+    padding: 12px 0;
+  }
+  
+  .banner-text {
+    font-size: 0.75rem;
+    padding: 0 10px;
+  }
+  
+  .banner-right .banner-cta {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+  
+  .banner-icon {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+  .casino-banner::before {
+    animation: none; /* Disable shine animation on mobile for performance */
+  }
+  
+  .banner-icon {
+    animation: none; /* Disable pulse animation on mobile */
+  }
+}
+
+/* High-end casino visual effects for desktop */
+@media (min-width: 769px) {
+  .casino-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 15px 40px rgba(220, 20, 60, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  .cta-button.pulse {
+    animation: casinoPulse 2s infinite;
+  }
+  
+  @keyframes casinoPulse {
+    0%, 100% { 
+      transform: scale(1);
+      box-shadow: 
+        0 6px 20px rgba(220, 20, 60, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+    50% { 
+      transform: scale(1.02);
+      box-shadow: 
+        0 8px 25px rgba(220, 20, 60, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+  }
+}
